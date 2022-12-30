@@ -1,0 +1,31 @@
+<p-panel header="Employee Management System">
+    <h3>EmployeeName</h3>
+    <span class="ui-float-label">
+        <input Id="float-input" type="text" [(ngModel)]="employeename" size="30" pInputText required>
+        <label for="float-input>"EmployeeName</label>
+    </span>
+<h3>StarTimeUtc</h3>
+    <span class="ui-float-label">
+    <input Id="float-input" type="text" [(ngModel)]="startimeutc" size="30" pInputText required>
+    <label for="float-input>"StarTimeUtc</label>
+</span>
+<h3>EndTimeUtc</h3>
+    <span class="ui-float-label">
+    <input Id="float-input" type="text" [(ngModel)]="endtimeutc" size="30" pInputText required>
+    <label for="float-input>"EndTimeUtc</label>
+</span> 
+<h3>EntryNotes</h3>
+    <span class="ui-float-label">
+    <input Id="float-input" type="text" [(ngModel)]="entrynotes" size="30" pInputText required>
+    <label for="float-input>"EntryNotes</label>
+</span>
+<h3>DeletedOn</h3>
+    <span class="ui-float-label">
+    <input Id="float-input" type="text" [(ngModel)]="deletedon" size="30" pInputText required>
+    <label for="float-input>"DeletedOn</label>
+</span>
+</p-footer>
+    </button pButton type="button" label="Save" icon="pi pi-check" style="margin-right: .25em" (click)="saveEmployee()"></button>
+    </button pButton type="button" label="Cancel" icon="pi pi-times" class="ui-button-secondary" (click)="cancelEmployee()"></button>
+</p-footer>
+</p-panel>
